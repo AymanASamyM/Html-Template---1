@@ -26,6 +26,7 @@ body {
     border-top: 2px solid #ffffff;
     border-bottom: 2px solid #ffffff;
     margin: 0 auto;
+    width: -moz-fit-content; /* to take effect in firefox browser */
     width: fit-content;
     padding: 5px 0;
 }
@@ -42,9 +43,9 @@ body {
 }
 
 .header .slider .container .intro button:hover {
-    color: #35BC71;
+    color: #31b341;
     cursor: pointer;
-    border: 2px solid #35BC71;
+    border: 2px solid #31b341;
 }
 
 .header .navbar {
@@ -59,7 +60,7 @@ body {
 }
 
 .header .navbar h2 span{
-    color: #35BC71;
+    color: #31b341;
 }
 
 .header .navbar ul {
@@ -86,7 +87,7 @@ body {
 
 .header .navbar ul li.active a,
 .header .navbar ul li a:hover {
-    color: #35BC71;
+    color: #31b341;
 }
 
 /* Features */
@@ -105,15 +106,12 @@ body {
 .features .feature p {
     text-align: justify;
     line-height: 1.7;
-    color: #888888;
+    color: #aaaaaa;
 }
 
-.features .feature:first-of-type {
+/* for more generic code */
+.features .feature:not(:last-of-type) {
     margin-right: 5%;
-}
-
-.features .feature:last-of-type {
-    margin-left: 5%;
 }
 
 /* About Me */
@@ -125,12 +123,10 @@ body {
 .about-me .img {
     float: left;
     width: 40%;
+    height: 600px;
 }
 
 .about-me .img img {
-    top: 3px;
-    position: relative;
-    height: 600px;
     width: 100%;
 }
 
@@ -175,7 +171,7 @@ body {
 
 .about-me .skills .skill .icon i {
     padding: 1px;
-    color: #6FC57A;
+    color: #31b341;
 }
 
 .about-me .skills .skill .text {
@@ -184,6 +180,14 @@ body {
 }
 
 .about-me .skills .skill .text h4 {
+    /* 
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        inserting this at the top of code will be effective
+        and avoid using the following line
+    */
     margin-top: 0;
     margin-bottom: 10px;
     color: #555555;
@@ -233,9 +237,9 @@ body {
 }
 
 .my-skills .container .info button:hover {
-    color: #429B4C;
+    color: #31b341;
     cursor: pointer;
-    border-color: #429B4C;
+    border-color: #31b341;
 }
 
 .my-skills .container .progress {
@@ -308,9 +312,9 @@ body {
 }
 
 .resume .container button:hover {
-    color: #429B4C;
+    color: #31b341;
     cursor: pointer;
-    border-color: #429B4C;
+    border-color: #31b341;
 }
 
 .resume .container .arrow {
@@ -426,7 +430,7 @@ body {
 }
 
 .testmonial ul li {
-    border: #35BC71 2px solid;
+    border: #31b341 2px solid;
     border-radius: 5px;
     width: 5px;
     height: 5px;
@@ -436,7 +440,7 @@ body {
 
 .testmonial ul li:hover,
 .testmonial ul li + .active {
-    background-color: #35BC71;
+    background-color: #31b341;
 }
 
 /* Portofolio */
